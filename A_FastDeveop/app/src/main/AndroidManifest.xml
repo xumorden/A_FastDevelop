@@ -15,6 +15,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".splash.SplashActivity" />
+        <activity android:name=".splash.SplashOneActivity" />
+        <activity android:name=".splash.SplashTwoActivity"
+            android:label="@string/app_intro"></activity>
     </application>
 
 </manifest>

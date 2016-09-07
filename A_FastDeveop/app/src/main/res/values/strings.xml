@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">A_FastDeveop</string>
+    <string name="app_intro">流行的splashActivity</string>
 </resources>
