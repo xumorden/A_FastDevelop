@@ -5,12 +5,13 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 
-import com.github.paolorotolo.appintro.AppIntro;
+import com.github.paolorotolo.appintro.AppIntro2;
+import com.github.paolorotolo.appintro.AppIntroFragment;
 import com.xumaodun.a_fastdeveop.R;
 
 //流行的splashActivity
 //https://github.com/PaoloRotolo/AppIntro
-public class SplashTwoActivity extends AppIntro {
+public class SplashTwoActivity extends AppIntro2 {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,23 +19,30 @@ public class SplashTwoActivity extends AppIntro {
 
         // Add your slide's fragments here.
         // AppIntro will automatically generate the dots indicator and buttons.
-        addSlide(SampleSlide.newInstance(R.layout.intro));
-        addSlide(SampleSlide.newInstance(R.layout.intro2));
-        addSlide(SampleSlide.newInstance(R.layout.intro3));
-        addSlide(SampleSlide.newInstance(R.layout.intro4));
+//        addSlide(SampleSlide.newInstance(R.layout.intro));
+//        addSlide(SampleSlide.newInstance(R.layout.intro2));
+//        addSlide(SampleSlide.newInstance(R.layout.intro3));
+//        addSlide(SampleSlide.newInstance(R.layout.intro4));
 
         // Instead of fragments, you can also use our default slide
         // Just set a title, description, background and image. AppIntro will do the rest.
-//        addSlide(AppIntroFragment.newInstance("标题", "描述", R.drawable.newer01, Color.parseColor("#FFFF00")));
+        addSlide(AppIntroFragment.newInstance("标题", "描述", R.drawable.newer01, Color.parseColor("#2196F3")));
+        addSlide(AppIntroFragment.newInstance("标题", "描述", R.drawable.newer01, Color.parseColor("#2196F3")));
 
         // OPTIONAL METHODS
         // Override bar/separator color.
-        setBarColor(Color.parseColor("#3F51B5"));
-        setSeparatorColor(Color.parseColor("#2196F3"));
+//        setBarColor(Color.parseColor("#3F51B5"));
+//        setSeparatorColor(Color.parseColor("#2196F3"));
 
         // Hide Skip/Done button.
-        showSkipButton(true);
-        setProgressButtonEnabled(false);
+//        showSkipButton(false);
+//        setProgressButtonEnabled(false);
+
+        setFadeAnimation();
+        setZoomAnimation();
+        setFlowAnimation();
+        setSlideOverAnimation();
+        setDepthAnimation();
 
     }
 
