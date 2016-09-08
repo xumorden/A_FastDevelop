@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import com.xumaodun.a_fastdeveop.splash.SplashActivity;
+import com.xumaodun.a_fastdeveop.tabmain.TabMainActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,8 +26,13 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
-    public void mainActivity(View view) {
+    public void splashActivity(View view) {
         intent = new Intent(this, SplashActivity.class);
+        startActivity(intent);
+    }
+
+    public void mainActivity(View view) {
+        intent = new Intent(this, TabMainActivity.class);
         startActivity(intent);
     }
 }

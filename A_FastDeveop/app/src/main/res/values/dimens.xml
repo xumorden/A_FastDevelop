@@ -75,4 +75,6 @@
     <dimen name="space_3">0.0dip</dimen>
     <dimen name="space_2">2.0dip</dimen>
     <dimen name="space_1">0.0dip</dimen>
+
+    <dimen name="tab_top_fontsize">15sp</dimen>
 </resources>
