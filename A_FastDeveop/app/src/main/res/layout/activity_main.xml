@@ -68,4 +68,15 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下拉刷新"
+        android:id="@+id/refresh_activity"
+        android:padding="10dp"
+        android:onClick="refreshActivity"
+        android:layout_below="@+id/viewpager_activity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>

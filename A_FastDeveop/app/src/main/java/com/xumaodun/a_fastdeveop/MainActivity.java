@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import com.xumaodun.a_fastdeveop.refresh.RefreshActivity;
 import com.xumaodun.a_fastdeveop.selector.SelectorActivity;
 import com.xumaodun.a_fastdeveop.splash.SplashActivity;
 import com.xumaodun.a_fastdeveop.tabmain.TabMainActivity;
@@ -51,6 +52,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void viewpagerActivity(View view) {
         intent = new Intent(this, ViewPagerAvtivity.class);
+        startActivity(intent);
+    }
+
+    public void refreshActivity(View view) {
+        intent = new Intent(this, RefreshActivity.class);
         startActivity(intent);
     }
 }

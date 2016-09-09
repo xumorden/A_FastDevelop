@@ -29,7 +29,9 @@
             android:label="@string/app_intro" />
         <activity android:name=".vedio.VedioActivity" />
         <activity android:name=".selector.SelectorActivity" />
-        <activity android:name=".viewpager.ViewPagerAvtivity"></activity>
+        <activity android:name=".viewpager.ViewPagerAvtivity" />
+        <activity android:name=".refresh.RefreshActivity" />
+        <activity android:name=".refresh.MaterialActivity"></activity>
     </application>
 
 </manifest>

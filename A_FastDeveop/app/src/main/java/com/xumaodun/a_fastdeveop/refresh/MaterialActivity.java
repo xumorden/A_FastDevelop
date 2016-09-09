@@ -1,0 +1,15 @@
+package com.xumaodun.a_fastdeveop.refresh;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.xumaodun.a_fastdeveop.R;
+
+public class MaterialActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_material);
+    }
+}
