@@ -28,7 +28,8 @@
             android:name=".splash.SplashTwoActivity"
             android:label="@string/app_intro" />
         <activity android:name=".vedio.VedioActivity" />
-        <activity android:name=".selector.SelectorActivity"></activity>
+        <activity android:name=".selector.SelectorActivity" />
+        <activity android:name=".viewpager.ViewPagerAvtivity"></activity>
     </application>
 
 </manifest>

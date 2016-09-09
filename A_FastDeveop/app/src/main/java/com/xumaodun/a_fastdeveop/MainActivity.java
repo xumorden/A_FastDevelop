@@ -10,6 +10,7 @@ import com.xumaodun.a_fastdeveop.selector.SelectorActivity;
 import com.xumaodun.a_fastdeveop.splash.SplashActivity;
 import com.xumaodun.a_fastdeveop.tabmain.TabMainActivity;
 import com.xumaodun.a_fastdeveop.vedio.VedioActivity;
+import com.xumaodun.a_fastdeveop.viewpager.ViewPagerAvtivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -45,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void selectorActivity(View view) {
         intent = new Intent(this, SelectorActivity.class);
+        startActivity(intent);
+    }
+
+    public void viewpagerActivity(View view) {
+        intent = new Intent(this, ViewPagerAvtivity.class);
         startActivity(intent);
     }
 }
