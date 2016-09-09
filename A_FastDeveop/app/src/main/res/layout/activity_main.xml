@@ -35,4 +35,26 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="视频页面"
+        android:id="@+id/vedio_activity"
+        android:padding="10dp"
+        android:onClick="vedioActivity"
+        android:layout_below="@+id/main_activity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择页面"
+        android:id="@+id/selector_actovity"
+        android:padding="10dp"
+        android:onClick="selectorActivity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/vedio_activity" />
+
 </RelativeLayout>
