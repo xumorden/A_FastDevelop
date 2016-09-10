@@ -5,4 +5,64 @@
     android:layout_height="match_parent"
     tools:context="com.xumaodun.a_fastdeveop.refresh.MaterialActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="ScrollView"
+        android:id="@+id/ScrollView"
+        android:onClick="ScrollView"
+        android:textSize="@dimen/space_20"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/activity_main_toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="RecyclerView"
+        android:id="@+id/RecyclerView"
+        android:onClick="RecyclerView"
+        android:textSize="@dimen/space_20"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/activity_main_toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="WaveView"
+        android:id="@+id/WaveView"
+        android:onClick="WaveView"
+        android:textSize="@dimen/space_20"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="120dp"
+        android:layout_below="@+id/activity_main_toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="LoadMoreView"
+        android:id="@+id/LoadMoreView"
+        android:onClick="LoadMoreView"
+        android:textSize="@dimen/space_20"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="160dp"
+        android:layout_below="@+id/activity_main_toolbar"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

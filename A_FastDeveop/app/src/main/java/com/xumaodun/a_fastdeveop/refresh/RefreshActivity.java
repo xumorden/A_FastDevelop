@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import com.xumaodun.a_fastdeveop.R;
+import com.xumaodun.a_fastdeveop.refresh.pull.PullToRefreshActivity;
 
 public class RefreshActivity extends AppCompatActivity {
 
@@ -33,6 +34,13 @@ public class RefreshActivity extends AppCompatActivity {
     }
 
     public void MaterialRefresh(View view){
-
+        intent = new Intent(this, MaterialActivity.class);
+        startActivity(intent);
     }
+
+    public void pullToRefresh(View view){
+        intent = new Intent(this, PullToRefreshActivity.class);
+        startActivity(intent);
+    }
+
 }

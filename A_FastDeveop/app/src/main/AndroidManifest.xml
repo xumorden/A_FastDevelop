@@ -31,7 +31,12 @@
         <activity android:name=".selector.SelectorActivity" />
         <activity android:name=".viewpager.ViewPagerAvtivity" />
         <activity android:name=".refresh.RefreshActivity" />
-        <activity android:name=".refresh.MaterialActivity"></activity>
+        <activity android:name=".refresh.MaterialActivity" />
+        <activity android:name=".refresh.pull.PullToRefreshActivity" />
+        <activity android:name=".refresh.ScrollViewActivity" />
+        <activity android:name=".refresh.RecyclerViewActivity" />
+        <activity android:name=".refresh.WaveViewActivity" />
+        <activity android:name=".refresh.LoadMoreViewActivity"></activity>
     </application>
 
 </manifest>

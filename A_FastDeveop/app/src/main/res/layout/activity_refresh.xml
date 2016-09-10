@@ -20,6 +20,22 @@
         android:text="MaterialRefreshLayout"
         android:id="@+id/MaterialRefresh"
         android:onClick="MaterialRefresh"
+        android:textSize="@dimen/space_25"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/activity_main_toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="pullToRefreshLayout"
+        android:id="@+id/pullToRefresh"
+        android:onClick="pullToRefresh"
+        android:textSize="@dimen/space_25"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="180dp"
         android:layout_below="@+id/activity_main_toolbar"
         android:layout_centerHorizontal="true" />
 

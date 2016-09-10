@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cjj.MaterialRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:overlay="false"
+    app:progress_backgroud_color="#FFFAFAFA"
+    app:progress_colors="@array/material_colors"
+    app:progress_show_arrow="true"
+    app:progress_show_circle_backgroud="true"
+    app:wave_color="#60ff2020"
+    app:wave_height_type="normal"
+    app:wave_show="true"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/yellow_lemon"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/a"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</com.cjj.MaterialRefreshLayout>
