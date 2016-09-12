@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.xumaodun.a_fastdeveop.splash.SplashActivity">
+    tools:context="com.xumaodun.a_fastdeveop.picture.PictureActivity">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/activity_main_toolbar"
+        android:id="@+id/activity_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
@@ -17,21 +17,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="传统splashActivity"
-        android:layout_below="@+id/activity_main_toolbar"
+        android:text="Image Loader"
+        android:id="@+id/ImageLoaderActivity"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/space_10"
+        android:onClick="ImageLoaderActivity"
+        android:layout_below="@+id/activity_toolbar"
         android:layout_centerHorizontal="true"
-        android:onClick="splashone"
-        android:layout_marginTop="58dp"
-        android:id="@+id/textView2" />
+        android:layout_marginTop="20dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="流行splashActivity"
-        android:layout_below="@+id/textView2"
-        android:onClick="splashtwo"
+        android:text="图片圆形显示"
+        android:id="@+id/circleImageView"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/space_10"
+        android:onClick="circleImageViewActivity"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="77dp" />
+        android:layout_marginBottom="54dp" />
 
 </RelativeLayout>

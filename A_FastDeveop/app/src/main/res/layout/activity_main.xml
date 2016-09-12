@@ -79,4 +79,15 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="图片层"
+        android:id="@+id/PictureActivity"
+        android:padding="10dp"
+        android:onClick="PictureActivity"
+        android:layout_below="@+id/refresh_activity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>

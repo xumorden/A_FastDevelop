@@ -9,6 +9,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
+        android:name=".common.AppContext"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -36,7 +37,10 @@
         <activity android:name=".refresh.ScrollViewActivity" />
         <activity android:name=".refresh.RecyclerViewActivity" />
         <activity android:name=".refresh.WaveViewActivity" />
-        <activity android:name=".refresh.LoadMoreViewActivity"></activity>
+        <activity android:name=".refresh.LoadMoreViewActivity" />
+        <activity android:name=".picture.PictureActivity" />
+        <activity android:name=".picture.imageloader.ImageLoaderActivity" />
+        <activity android:name=".picture.CircleImageViewActivity"></activity>
     </application>
 
 </manifest>
