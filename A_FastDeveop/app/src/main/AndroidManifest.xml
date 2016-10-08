@@ -41,7 +41,8 @@
         <activity android:name=".picture.PictureActivity" />
         <activity android:name=".picture.imageloader.ImageLoaderActivity" />
         <activity android:name=".picture.CircleImageViewActivity" />
-        <activity android:name=".refresh.pull.GridViewActivity"></activity>
+        <activity android:name=".refresh.pull.GridViewActivity" />
+        <activity android:name=".picture.glide.GlideActivity"></activity>
     </application>
 
 </manifest>

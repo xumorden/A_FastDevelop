@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import com.xumaodun.a_fastdeveop.R;
+import com.xumaodun.a_fastdeveop.picture.glide.GlideActivity;
 import com.xumaodun.a_fastdeveop.picture.imageloader.ImageLoaderActivity;
 
 public class PictureActivity extends AppCompatActivity {
@@ -35,6 +36,11 @@ public class PictureActivity extends AppCompatActivity {
 
     public void ImageLoaderActivity(View view){
         intent = new Intent(this, ImageLoaderActivity.class);
+        startActivity(intent);
+    }
+
+    public void GlideActivity(View view){
+        intent = new Intent(this, GlideActivity.class);
         startActivity(intent);
     }
 
