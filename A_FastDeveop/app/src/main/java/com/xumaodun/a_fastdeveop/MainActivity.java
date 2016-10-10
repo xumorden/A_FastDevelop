@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.xumaodun.a_fastdeveop.picture.PictureActivity;
 import com.xumaodun.a_fastdeveop.refresh.RefreshActivity;
+import com.xumaodun.a_fastdeveop.retrofit.RetrofitActivity;
 import com.xumaodun.a_fastdeveop.selector.SelectorActivity;
 import com.xumaodun.a_fastdeveop.splash.SplashActivity;
 import com.xumaodun.a_fastdeveop.tabmain.TabMainActivity;
@@ -63,6 +64,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void PictureActivity(View view) {
         intent = new Intent(this, PictureActivity.class);
+        startActivity(intent);
+    }
+
+    public void RetrofitActivity(View view) {
+        intent = new Intent(this, RetrofitActivity.class);
         startActivity(intent);
     }
 }

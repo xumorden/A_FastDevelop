@@ -90,4 +90,15 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retrofit"
+        android:id="@+id/RetrofitActivity"
+        android:padding="10dp"
+        android:onClick="RetrofitActivity"
+        android:layout_below="@+id/PictureActivity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>
