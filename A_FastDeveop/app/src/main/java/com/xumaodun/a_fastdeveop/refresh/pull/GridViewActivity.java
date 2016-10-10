@@ -1,8 +1,12 @@
 package com.xumaodun.a_fastdeveop.refresh.pull;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.TextView;
 
 import com.xumaodun.a_fastdeveop.R;
 import com.xumaodun.a_fastdeveop.utils.AlgorithmUtils;
@@ -23,6 +27,8 @@ public class GridViewActivity extends AppCompatActivity {
     private PtrClassicFrameLayout frameLayout;
     private LoadMoreGridViewContainer loadMoreContainer;
     private GridViewWithHeaderAndFooter mgridView;
+    private ArrayList<String> arrayList;
+    private MyAdapter adapter;
 
     //和下拉刷新有关的逻辑
     private int total;           //总数
@@ -33,11 +39,11 @@ public class GridViewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gridview);
-        initData();
+//        initData();
         initView();
     }
     private void initView() {
-        mgridView = (GridViewWithHeaderAndFooter) findViewById(R.id.content_view);
+        mgridView = (GridViewWithHeaderAndFooter) findViewById(R.id.load_more_grid_view);
         frameLayout=(PtrClassicFrameLayout)findViewById(R.id.toppicdetail_ptr_frame);
         loadMoreContainer=(LoadMoreGridViewContainer)findViewById(R.id.load_more_grid_view_container);
         frameLayout.setPtrHandler(new PtrHandler() {
@@ -49,7 +55,7 @@ public class GridViewActivity extends AppCompatActivity {
             public void onRefreshBegin(PtrFrameLayout frame) {
                 //下拉刷新    刷新开始的时候
                 isupdate=true;
-//                initData();
+                initData();
                 frameLayout.refreshComplete();
             }
         });
@@ -66,10 +72,38 @@ public class GridViewActivity extends AppCompatActivity {
             public void onLoadMore(LoadMoreContainer loadMoreContainer) {
                 //加载更多的时候请求数据
                 isupdate=false;
-//                getMoreDataFromServer(path);
+                getMoreDataFromServer();
             }
         });
+        initData();
     }
+
+    private void getMoreDataFromServer(){
+        pageNumber++;
+        //"&page="+pageNumber+"+&size=10"
+        ArrayList<String> moreData = new ArrayList<String>();
+        moreData.add("six");
+        moreData.add("seven");
+        moreData.add("eight");
+        moreData.add("nine");
+        moreData.add("ten");
+        moreData.add("elven");
+
+        if(isupdate){
+            pageNumber=1;
+            //完成下拉刷新
+            frameLayout.refreshComplete();
+            arrayList.clear();
+        }
+        //
+        loadMoreContainer.loadMoreFinish(isEmpty(arrayList), hasMore());
+        if(moreData != null){
+            arrayList.addAll(moreData);
+        }
+        adapter.notifyDataSetChanged();
+
+    }
+
 
     private void initData() {
         getDataFromServicer();
@@ -77,6 +111,17 @@ public class GridViewActivity extends AppCompatActivity {
 
     private void getDataFromServicer() {
         //path+"&page=1&size=10"
+        total = 50;
+        arrayList = new ArrayList<String>();
+        arrayList.add("zeno");
+        arrayList.add("one");
+        arrayList.add("two");
+        arrayList.add("three");
+        arrayList.add("four");
+        arrayList.add("five");
+
+        adapter = new MyAdapter(this, arrayList);
+        mgridView.setAdapter(adapter);
     }
 
     private boolean hasMore() {
@@ -86,6 +131,52 @@ public class GridViewActivity extends AppCompatActivity {
 
     private boolean isEmpty(ArrayList<String> data) {
         return data == null || data.size() == 0;
+    }
+
+    class MyAdapter extends BaseAdapter {
+
+        private Context context;
+        private ArrayList<String> arrayList;
+
+        public MyAdapter(Context context, ArrayList<String> arrayList){
+            this.context = context;
+            this.arrayList = arrayList;
+        }
+
+        @Override
+        public int getCount() {
+            return arrayList.size();
+        }
+
+        @Override
+        public String getItem(int position) {
+            return arrayList.get(position);
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            ViewHolder mHolder;
+            if(convertView == null){
+                mHolder = new ViewHolder();
+                convertView = View.inflate(context, R.layout.gride_item, null);
+                mHolder.tvTitle = (TextView) convertView.findViewById(R.id.tv_title);
+                convertView.setTag(mHolder);
+            }else{
+                mHolder = (ViewHolder) convertView.getTag();
+            }
+            String item = getItem(position);
+            mHolder.tvTitle.setText(item);
+            return convertView;
+        }
+    }
+
+    static class ViewHolder{
+        public TextView tvTitle;
     }
 
 }
