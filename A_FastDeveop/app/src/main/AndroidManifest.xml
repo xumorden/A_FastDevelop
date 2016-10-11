@@ -43,7 +43,8 @@
         <activity android:name=".picture.CircleImageViewActivity" />
         <activity android:name=".refresh.pull.GridViewActivity" />
         <activity android:name=".picture.glide.GlideActivity" />
-        <activity android:name=".retrofit.RetrofitActivity"></activity>
+        <activity android:name=".retrofit.RetrofitActivity" />
+        <activity android:name=".splash.AnimationActivity"></activity>
     </application>
 
 </manifest>

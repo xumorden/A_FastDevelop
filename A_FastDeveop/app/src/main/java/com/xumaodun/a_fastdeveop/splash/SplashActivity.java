@@ -43,5 +43,11 @@ public class SplashActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    //AnimationActivity
+    public void AnimationActivity(View view){
+        intent = new Intent(this, AnimationActivity.class);
+        startActivity(intent);
+    }
+
 
 }
