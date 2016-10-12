@@ -101,4 +101,15 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AndroidChartActivity"
+        android:id="@+id/AndroidCharts"
+        android:padding="10dp"
+        android:onClick="AndroidChartActivity"
+        android:layout_below="@+id/RetrofitActivity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>
