@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import com.xumaodun.a_fastdeveop.chats.AndroidChartActivity;
+import com.xumaodun.a_fastdeveop.fadingindicator.FadingindicatorActivity;
 import com.xumaodun.a_fastdeveop.picture.PictureActivity;
 import com.xumaodun.a_fastdeveop.refresh.RefreshActivity;
 import com.xumaodun.a_fastdeveop.retrofit.RetrofitActivity;
@@ -75,6 +76,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void AndroidChartActivity(View view) {
         intent = new Intent(this, AndroidChartActivity.class);
+        startActivity(intent);
+    }
+
+    public void FadingindicatorActivity(View view) {
+        intent = new Intent(this, FadingindicatorActivity.class);
         startActivity(intent);
     }
 }

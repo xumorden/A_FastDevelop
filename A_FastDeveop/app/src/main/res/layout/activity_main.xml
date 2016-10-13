@@ -112,4 +112,15 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FadingindicatorActivity"
+        android:id="@+id/Fadingindicator"
+        android:padding="10dp"
+        android:onClick="FadingindicatorActivity"
+        android:layout_below="@+id/AndroidCharts"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>

@@ -60,7 +60,8 @@
     <color name="gray_slate">#708090</color>
     <color name="blue_light">#0083FF</color>
 
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#FC823B</color>
+    <color name="colorPrimaryDark">#EC622B</color>
+    <color name="colorAccent">#FEFEFE</color>
+    <color name="strokeColor">#56B6BF</color>
 </resources>
