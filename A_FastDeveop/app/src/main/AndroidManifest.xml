@@ -52,7 +52,8 @@
         <activity android:name=".chats.PieFragmentActivity" />
         <activity android:name=".chats.BarFragmentActivity" />
         <activity android:name=".chats.ClockPieFragmentActivity" />
-        <activity android:name=".fadingindicator.FadingindicatorActivity"></activity>
+        <activity android:name=".fadingindicator.FadingindicatorActivity" />
+        <activity android:name=".newsstand.NewsstandActivity"></activity>
     </application>
 
 </manifest>

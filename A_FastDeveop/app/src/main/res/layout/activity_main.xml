@@ -123,4 +123,15 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PlayNewsStand"
+        android:id="@+id/NewsstandActivity"
+        android:padding="10dp"
+        android:onClick="NewsstandActivity"
+        android:layout_below="@+id/Fadingindicator"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>

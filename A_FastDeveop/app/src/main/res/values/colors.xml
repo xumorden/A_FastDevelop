@@ -64,4 +64,12 @@
     <color name="colorPrimaryDark">#EC622B</color>
     <color name="colorAccent">#FEFEFE</color>
     <color name="strokeColor">#56B6BF</color>
+
+    <color name="pink_transparent">#aa700d39</color>
+    <color name="green_transparent">#aa375a1f</color>
+    <color name="blue_transparent">#aa293576</color>
+    <color name="red_transparent">#aa7f3907</color>
+    <color name="purple_transparent">#aa432677</color>
+    <color name="holo_red_light_transparent">#aaff4444</color>
+
 </resources>
