@@ -1,5 +1,8 @@
 # A_FastDevelop
-this is an android fast develop framework.
-这是一个安卓快速开发框架，里面包含了下拉刷新，视频播放，viewpager和fragment主页面，选择器，
+这是一个安卓开发的快速模板。
+这是一个安卓快速开发框架，里面包含了下拉刷新，jiecaovideoplayer视频播放，viewpager和fragment主页面，选择器，
 图片加载，retrofit2网络请求，统计图表和动画splashActivity等功能。方便后期开发，代码拿来就用。
+棒呆APP的视频播放，就采用了jiecaovideoplayer播放器。图片加载，使用了Image Loader和glide两个第三方组件，
+这2个图片加载库应用很广，Meetup的APP采用Image Loader等。下拉刷新则是Material风格的，效果和陌陌等应用的下拉刷新一样。
+模板还有retrofit2网络请求的代码，retrofit2是一种restful风格的请求方式，符合现在restful风格的服务器接口。
 从开始准备，到写完，中间花费了2个月，感谢David Guan 在这2个月中对我的支持鼓励，感谢。
