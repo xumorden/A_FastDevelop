@@ -21,7 +21,7 @@
         android:id="@+id/MaterialRefresh"
         android:onClick="MaterialRefresh"
         android:textSize="@dimen/space_25"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/text_color_blue"
         android:layout_marginTop="80dp"
         android:layout_below="@+id/activity_main_toolbar"
         android:layout_centerHorizontal="true" />
@@ -34,7 +34,7 @@
         android:id="@+id/pullToRefresh"
         android:onClick="pullToRefresh"
         android:textSize="@dimen/space_25"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/text_color_blue"
         android:layout_marginTop="180dp"
         android:layout_below="@+id/activity_main_toolbar"
         android:layout_centerHorizontal="true" />
