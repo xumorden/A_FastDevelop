@@ -2,7 +2,12 @@ package com.xumaodun.a_fastdeveop.common;
 
 import android.app.Application;
 import android.content.Context;
+import android.os.Build;
+import android.os.StrictMode;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.Volley;
+import com.aspsine.swipetoloadlayout.BuildConfig;
 import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiskCache;
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.cache.memory.impl.UsingFreqLimitedMemoryCache;
@@ -18,6 +23,7 @@ import java.io.File;
 public class AppContext extends Application {
 
     private static AppContext app;
+    private static RequestQueue sRequestQueue;
 
     public AppContext() {
         app = this;
@@ -67,6 +73,19 @@ public class AppContext extends Application {
                 .build();
         //全局初始化此配置
         ImageLoader.getInstance().init(config);
+    }
+
+    public static RequestQueue getRequestQueue() {
+        if (sRequestQueue == null) {
+            sRequestQueue = Volley.newRequestQueue(app);
+        }
+        return sRequestQueue;
+    }
+
+    private void setStrictMode() {
+        if (BuildConfig.DEBUG && Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD) {
+            StrictMode.enableDefaults();
+        }
     }
 
 }

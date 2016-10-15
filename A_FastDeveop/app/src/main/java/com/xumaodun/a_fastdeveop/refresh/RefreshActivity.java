@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.xumaodun.a_fastdeveop.R;
 import com.xumaodun.a_fastdeveop.refresh.commonrefresh.CommonRefreshActivity;
+import com.xumaodun.a_fastdeveop.refresh.swipe.SwipeActivity;
 
 public class RefreshActivity extends AppCompatActivity {
 
@@ -40,6 +41,11 @@ public class RefreshActivity extends AppCompatActivity {
 
     public void pullToRefresh(View view){
         intent = new Intent(this, CommonRefreshActivity.class);
+        startActivity(intent);
+    }
+
+    public void SwipeToLoadLayout(View view){
+        intent = new Intent(this, SwipeActivity.class);
         startActivity(intent);
     }
 

@@ -54,11 +54,13 @@
         <activity android:name=".chats.ClockPieFragmentActivity" />
         <activity android:name=".fadingindicator.FadingindicatorActivity" />
         <activity android:name=".newsstand.NewsstandActivity" />
-        <activity android:name=".refresh.commonrefresh.CommonRefreshActivity"/>
-        <activity android:name=".refresh.commonrefresh.GridViewAtivity"/>
-        <activity android:name=".refresh.commonrefresh.ListViewActivity"/>
-        <activity android:name=".refresh.commonrefresh.RecyclerViewActivity"/>
-        <activity android:name=".refresh.commonrefresh.SwipeListViewActivity"/>
+        <activity android:name=".refresh.commonrefresh.CommonRefreshActivity" />
+        <activity android:name=".refresh.commonrefresh.GridViewAtivity" />
+        <activity android:name=".refresh.commonrefresh.ListViewActivity" />
+        <activity android:name=".refresh.commonrefresh.RecyclerViewActivity" />
+        <activity android:name=".refresh.commonrefresh.SwipeListViewActivity" />
+        <activity android:name=".refresh.swipe.SwipeActivity" />
+        <activity android:name=".refresh.swipe.AboutActivity"></activity>
     </application>
 
 </manifest>

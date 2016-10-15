@@ -15,4 +15,10 @@
     <string name="recyclerview_with_loadmore">Recyclerview with loadmore</string>
     <string name="gridview_with_loadmore">GridView With LoadMore</string>
     <string name="swipe_listview_with_loadmore">SwipeRefreshLayout ListView With LoadMore</string>
+
+    <string name="action_config">Config</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="author">Aspsine</string>
+    <string name="desc">SwipeToLoadLayout provides a standered to achieve pull-to-refresh and pull-to-loadmore.</string>
+    <string name="github">http://github.com/Aspsine/SwipeToLoadLayout</string>
 </resources>
