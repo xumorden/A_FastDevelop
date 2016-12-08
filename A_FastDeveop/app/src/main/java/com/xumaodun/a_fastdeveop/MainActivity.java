@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.xumaodun.a_fastdeveop.chats.AndroidChartActivity;
 import com.xumaodun.a_fastdeveop.fadingindicator.FadingindicatorActivity;
+import com.xumaodun.a_fastdeveop.materialize.MaterializeAppActivity;
 import com.xumaodun.a_fastdeveop.newsstand.NewsstandActivity;
 import com.xumaodun.a_fastdeveop.picture.PictureActivity;
 import com.xumaodun.a_fastdeveop.refresh.RefreshActivity;
@@ -87,6 +88,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void NewsstandActivity(View view) {
         intent = new Intent(this, NewsstandActivity.class);
+        startActivity(intent);
+    }
+
+    public void MaterializeAppActivity(View view) {
+        intent = new Intent(this, MaterializeAppActivity.class);
         startActivity(intent);
     }
 }

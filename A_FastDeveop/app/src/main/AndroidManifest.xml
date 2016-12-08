@@ -60,7 +60,15 @@
         <activity android:name=".refresh.commonrefresh.RecyclerViewActivity" />
         <activity android:name=".refresh.commonrefresh.SwipeListViewActivity" />
         <activity android:name=".refresh.swipe.SwipeActivity" />
-        <activity android:name=".refresh.swipe.AboutActivity"></activity>
+        <activity android:name=".refresh.swipe.AboutActivity" />
+        <activity android:name=".materialize.MaterializeAppActivity" />
+        <activity
+            android:name=".materialize.DetailActivity"
+            android:parentActivityName=".materialize.MaterializeAppActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".materialize.MaterializeAppActivity"/>
+        </activity>
     </application>
 
 </manifest>
